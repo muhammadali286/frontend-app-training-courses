@@ -10,15 +10,18 @@ import ReactDOM from 'react-dom';
 import Header from '@edx/frontend-component-header';
 import Footer from '@edx/frontend-component-footer';
 import messages from './i18n';
-import ExamplePage from './example/ExamplePage';
+import ExampleCourcesPage from './example/ExampleCourcesPage';
 
 import './index.scss';
+
+// Css Tailwindcss
+ import './tailwind.scss'
 
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider>
       <Header />
-      <ExamplePage />
+      <ExampleCourcesPage />
       <Footer />
     </AppProvider>,
     document.getElementById('root'),
